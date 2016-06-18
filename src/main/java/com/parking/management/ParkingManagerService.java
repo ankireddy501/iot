@@ -45,7 +45,8 @@ public class ParkingManagerService {
 					}
 					else
 					{
-						oldLocation.getSlots().add(new ParkingSlot(newSlot.getName(), newSlot.getStatus(), newSlot.getOwnerId()));
+						oldLocation.getSlots().add(new ParkingSlot(newSlot.getName(),
+                                newSlot.getStatus(), newSlot.getOwnerId()));
 					}
 				}
 			}
@@ -65,7 +66,8 @@ public class ParkingManagerService {
 		ParkingSlot slot;
 		for(ParkingSlot parkingSlot: slots)
 		{
-			 slot = new ParkingSlot(parkingSlot.getName(), parkingSlot.getStatus(), parkingSlot.getOwnerId());
+			 slot = new ParkingSlot(parkingSlot.getName(), parkingSlot.getStatus(),
+                     parkingSlot.getOwnerId());
 			 list.add(slot);
 		}
 		
@@ -92,12 +94,5 @@ public class ParkingManagerService {
 
 	public Map<String, ParkingLocation> getParkingMap() {
 		return parkingMap;
-	}
-	
-	{
-		ParkingLocation location = new ParkingLocation("softwareag", 12.36, 15.69, 10, 3);
-		location.getSlots().add(new ParkingSlot("P1", "available", 123));
-		location.getSlots().add(new ParkingSlot("P2", "blocked", 456));
-		parkingMap.put("softwareag", location);
 	}
 }

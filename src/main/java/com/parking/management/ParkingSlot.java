@@ -15,7 +15,6 @@ public class ParkingSlot {
 	}
 
 	private String name;
-//	private Status status;
 	private String status;
 	private long ownerId;
 	
@@ -25,12 +24,6 @@ public class ParkingSlot {
 	public void setName(String name) {
 		this.name = name;
 	}
-	/*public Status getStatus() {
-		return status;
-	}
-	public void setStatus(Status status) {
-		this.status = status;
-	}*/
 	public String getStatus() {
 		return status;
 	}
@@ -47,9 +40,3 @@ public class ParkingSlot {
 	}
 	
 }
-
-
-/*enum Status
-{
-	BOOKED, AVAILABLE
-}*/
