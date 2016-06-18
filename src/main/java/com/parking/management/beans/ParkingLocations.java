@@ -1,4 +1,4 @@
-package com.parking.management;
+package com.parking.management.beans;
 
 import java.util.ArrayList;
 import java.util.List;

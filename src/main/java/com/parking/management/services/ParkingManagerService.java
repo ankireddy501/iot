@@ -1,10 +1,12 @@
-package com.parking.management;
+package com.parking.management.services;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.parking.management.beans.ParkingLocation;
+import com.parking.management.beans.ParkingSlot;
 import org.springframework.stereotype.Service;
 
 @Service

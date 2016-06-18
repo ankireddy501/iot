@@ -1,5 +1,9 @@
-package com.parking.management;
+package com.parking.management.controllers;
 
+import com.parking.management.beans.ParkingLocation;
+import com.parking.management.beans.ParkingLocations;
+import com.parking.management.beans.ParkingSlot;
+import com.parking.management.services.ParkingManagerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -8,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 public class ParkingController {
 
 	 @Autowired
-	 ParkingManagerService service;
+     ParkingManagerService service;
 	
 	@RequestMapping(value = "/locations", method = RequestMethod.GET)
 	public ParkingLocations getAllLocation()
