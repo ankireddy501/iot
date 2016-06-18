@@ -75,6 +75,30 @@
                     </jvmArguments>
                 </configuration>-->
 			</plugin>
+            <plugin>
+                <groupId>com.github.kongchen</groupId>
+                <artifactId>swagger-maven-plugin</artifactId>
+                <version>2.3.1</version>
+                <configuration>
+                    <apiSources>
+                        <apiSource>
+                            <locations>com.parking.management.controllers</locations>
+                            <apiVersion>1.0</apiVersion>
+                            <basePath>/controllers</basePath>
+                            <swaggerDirectory>${project.build.directory}/generated/swagger-json</swaggerDirectory>
+                            <swaggerUIDocBasePath>/apidocs</swaggerUIDocBasePath>
+                        </apiSource>
+                    </apiSources>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
 		</plugins>
 	</build>
 	
