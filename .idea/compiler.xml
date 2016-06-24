@@ -22,10 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="ParkingManagementSystem" />
+        <module name="parking-management" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="parking-management" target="1.8" />
       <module name="ParkingManagementSystem" target="1.8" />
     </bytecodeTargetLevel>
   </component>
